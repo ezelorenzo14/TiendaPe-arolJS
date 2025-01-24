@@ -7,9 +7,11 @@ const Navbar = ({ carrito }) => {
       <h1>Bienvenido a la Tienda Oficial de Peñarol</h1>
       <nav>
         <Link to="/">Inicio</Link>
-        <button>
-          Ver Carrito ({carrito.length})
-        </button>
+        <Link to="/carrito">
+          <button>
+            Ver Carrito ({carrito.length})
+          </button>
+        </Link>
       </nav>
     </header>
   );

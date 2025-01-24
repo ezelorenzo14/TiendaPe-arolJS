@@ -10,7 +10,7 @@ const Catalogo = ({ productos, agregarAlCarrito }) => {
           <h3>{producto.nombre}</h3>
           <p>{producto.descripcion}</p>
           <p>${producto.precio}</p>
-          <button onClick={() => agregarAlCarrito(producto)}>Agregar al Carrito</button>
+          <button onClick={() => agregarAlCarrito(producto.id)}>Agregar al Carrito</button>
           <Link to={`/producto/${producto.id}`}>Ver Detalle</Link>
         </div>
       ))}

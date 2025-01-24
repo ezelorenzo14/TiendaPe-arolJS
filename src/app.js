@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar";
 import Catalogo from "./components/Catalogo";
 import DetalleProducto from "./components/DetalleProducto";
+import Carrito from "./components/Carrito";
 
 const App = () => {
   // Estado para carrito y productos
@@ -70,24 +71,13 @@ const App = () => {
           path="/producto/:id"
           element={<DetalleProducto productos={productos} />}
         />
-      </Routes>
 
-      {/* Carrito como sección fija */}
-      <div className="carrito-fijo">
-        <h2>Tu Carrito</h2>
-        <ul>
-          {carrito.map((producto, index) => (
-            <li key={index}>
-              {producto.nombre} - ${producto.precio}
-            </li>
-          ))}
-        </ul>
-        <p>
-          Total: $
-          {carrito.reduce((total, producto) => total + producto.precio, 0)}
-        </p>
-        <button onClick={finalizarCompra}>Finalizar Compra</button>
-      </div>
+        {/* Página del carrito */}
+        <Route
+          path="/carrito"
+          element={<Carrito carrito={carrito} finalizarCompra={finalizarCompra} />}
+        />
+      </Routes>
     </Router>
   );
 };

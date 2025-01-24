@@ -1,6 +1,6 @@
 [
-    { "id": 1, "nombre": "Camiseta Peñarol", "precio": 3000, "imagen": "../imagenes/camiseta.webp", "descripcion": "Camiseta oficial del Club Atlético Peñarol." },
-    { "id": 2, "nombre": "Short Peñarol", "precio": 1000, "imagen": "../imagenes/short.webp", "descripcion": "Short oficial de Peñarol." },
-    { "id": 3, "nombre": "Canguro Peñarol", "precio": 2000, "imagen": "../imagenes/canguro.webp", "descripcion": "Canguro oficial del Club Atlético Peñarol." },
-    { "id": 4, "nombre": "Pantalon Peñarol", "precio": 1500, "imagen": "../imagenes/pantalon.webp", "descripcion": "Pantalón oficial del Club Atlético Peñarol." }
+    { "id": 1, "nombre": "Camiseta Peñarol", "precio": 3000, "imagen": "./imagenes/camiseta.webp", "descripcion": "Camiseta oficial del Club Atlético Peñarol." },
+    { "id": 2, "nombre": "Short Peñarol", "precio": 1000, "imagen": "./imagenes/short.webp", "descripcion": "Short oficial de Peñarol." },
+    { "id": 3, "nombre": "Canguro Peñarol", "precio": 2000, "imagen": "./imagenes/canguro.webp", "descripcion": "Canguro oficial del Club Atlético Peñarol." },
+    { "id": 4, "nombre": "Pantalon Peñarol", "precio": 1500, "imagen": "./imagenes/pantalon.webp", "descripcion": "Pantalón oficial del Club Atlético Peñarol." }
 ]
