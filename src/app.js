@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar";
-import Catalogo from "./components/Catalogo";
+import ItemListContainer from "./components/ItemListContainer"; 
 import DetalleProducto from "./components/DetalleProducto";
 import Carrito from "./components/Carrito";
 
@@ -55,15 +55,10 @@ const App = () => {
       <Navbar carrito={carrito} />
 
       <Routes>
-        {/* Página de catálogo */}
+        {/* Página principal de catálogo */}
         <Route
           path="/"
-          element={
-            <Catalogo
-              productos={productos}
-              agregarAlCarrito={agregarAlCarrito}
-            />
-          }
+          element={<ItemListContainer productos={productos} agregarAlCarrito={agregarAlCarrito} />}
         />
 
         {/* Detalle de producto */}
